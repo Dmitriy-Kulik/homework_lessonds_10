@@ -13,22 +13,13 @@ function commForm(){
         </form>
         ';
 }
-function setStr(){
+function setStr()
+{
     var_dump($_FILES['upload']);
-    if(isset($_FILES['upload']) && $_FILES['upload']['type'] == 'image/jpeg'){
-        move_uploaded_file($_FILES['upload']['tmp_name'], './6/img/' . $_FILES['upload']['name']);
+    if (isset($_FILES['upload']) && $_FILES['upload']['type'] == 'image/jpeg') {
+        move_uploaded_file($_FILES['upload']['tmp_name'], './6/gallery/' . $_FILES['upload']['name']);
     }
-    echo
-        '<div style="float:left;width:210px;height:220px; border:1px solid red;" align="center">
-                <img '.$image.' src="images/'.$val.'" />
-                <br/>
-                <b style="font:10px Verdana;">'.$val.'</b>
-            </div>';
+    //echo '<img src="/6/gallery/viber_image2.jpg">';
 
 
-
-
- /*   if($_FILES[$img]){
-        move_uploaded_file($_FILES['img'])
-    }*/
 }

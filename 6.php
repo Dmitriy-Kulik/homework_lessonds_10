@@ -12,11 +12,11 @@ setStr();
 
 //var_dump($_FILES[upload]);
 
-/*if($_FILES['img']){
-    move_uploaded_file($_FILES["img"]["tmp_name"], "/path/to/file/".$_FILES["filename"]["name"]);
+/*if($_FILES['gallery']){
+    move_uploaded_file($_FILES["gallery"]["tmp_name"], "/path/to/file/".$_FILES["filename"]["name"]);
 }*/
 
-/*if(isset( $_POST['img'])){
-    $img = $_POST['img'];
-    setStr($img);
+/*if(isset( $_POST['gallery'])){
+    $gallery = $_POST['gallery'];
+    setStr($gallery);
 }*/
