@@ -16,10 +16,10 @@ function commForm(){
 function setStr()
 {
     var_dump($_FILES['upload']);
-    if (isset($_FILES['upload']) && $_FILES['upload']['type'] == 'image/jpeg') {
+    if(isset($_FILES['upload']) && $_FILES['upload']['type'] == 'image/jpeg'){
         move_uploaded_file($_FILES['upload']['tmp_name'], './6/gallery/' . $_FILES['upload']['name']);
     }
-    //echo '<img src="/6/gallery/viber_image2.jpg">';
+    echo "<br><img src='6/gallery/2.jpg'>";
 
-
+    $s = new Smarty();
 }
